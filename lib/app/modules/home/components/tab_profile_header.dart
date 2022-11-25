@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:profile_student/app/routes/app_pages.dart';
 import 'package:profile_student/styles/styles.dart';
 import 'package:profile_student/utils/app_asset.dart';
 
@@ -71,7 +72,7 @@ class TabProfileHeader extends StatelessWidget {
             top: 13.w,
             right: 20.w,
             child: IconButton(
-              onPressed: () {},
+              onPressed: () => Get.toNamed(Routes.EDIT_PROFILE),
               padding: EdgeInsets.zero,
               constraints: BoxConstraints(minHeight: 24.w),
               icon: SizedBox.square(
