@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:profile_student/app/modules/home/components/tab_profile_header.dart';
+import 'package:profile_student/app/modules/home/components/tab_profile_info.dart';
 import 'package:profile_student/app/modules/home/components/tab_profile_menu.dart';
 import 'package:profile_student/styles/styles.dart';
 
@@ -13,7 +14,9 @@ class TabProfile extends StatelessWidget {
       child: Column(
         children: [
           const TabProfileHeader(),
-          verticalSpace(28.w),
+          verticalSpace(20.w),
+          const TabProfileInfo(),
+          verticalSpace(10.w),
           TabProfileMenu(
             onTap: () {},
             icon: 'ic_saldo.png',
