@@ -7,10 +7,12 @@ abstract class Routes {
   Routes._();
   static const HOME = _Paths.HOME;
   static const EDIT_PROFILE = _Paths.EDIT_PROFILE;
+  static const DATA_DIRI = _Paths.DATA_DIRI;
 }
 
 abstract class _Paths {
   _Paths._();
   static const HOME = '/home';
   static const EDIT_PROFILE = '/edit-profile';
+  static const DATA_DIRI = '/data-diri';
 }

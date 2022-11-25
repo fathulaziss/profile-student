@@ -57,7 +57,7 @@ class TabProfileHeader extends StatelessWidget {
                 ),
                 verticalSpace(Insets.med),
                 Text(
-                  'Terverifikasi',
+                  'Belum Terverifikasi',
                   style: TextStyles.title.copyWith(
                     fontSize: 14.w,
                     color: Colors.white,

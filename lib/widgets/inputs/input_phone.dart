@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:profile_student/styles/colors.dart';
 import 'package:profile_student/styles/styles.dart';
 import 'package:profile_student/widgets/inputs/input_primary.dart';
 
@@ -15,7 +14,7 @@ class InputPhone extends StatefulWidget {
     this.prefixIcon,
     this.suffixIcon,
     this.color,
-    this.textColor = AppColor.primaryColor,
+    this.textColor = Colors.black,
     this.margin,
     this.padding,
     this.enable = true,

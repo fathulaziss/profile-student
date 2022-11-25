@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:intl/intl.dart';
-import 'package:profile_student/styles/colors.dart';
 import 'package:profile_student/styles/styles.dart';
 import 'package:profile_student/widgets/inputs/input_primary.dart';
 
@@ -13,7 +12,7 @@ class InputDate extends StatefulWidget {
     this.prefixIcon,
     this.suffixIcon,
     this.color,
-    this.textColor = AppColor.primaryColor,
+    this.textColor = Colors.black,
     this.margin,
     this.padding,
     this.enable = true,

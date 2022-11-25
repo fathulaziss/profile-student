@@ -12,7 +12,7 @@ class InputPrimary extends StatefulWidget {
     this.prefixIcon,
     this.suffixIcon,
     this.color,
-    this.textColor = AppColor.primaryColor,
+    this.textColor = Colors.black,
     this.margin,
     this.padding,
     this.enable = true,
@@ -223,7 +223,7 @@ class _InputPrimaryState extends State<InputPrimary> {
         if (widget.label != null)
           Text(
             widget.label!,
-            style: TextStyles.desc.copyWith(color: AppColor.primaryColor),
+            style: TextStyles.desc.copyWith(color: Colors.black),
           ),
         Container(
           margin: widget.margin ??

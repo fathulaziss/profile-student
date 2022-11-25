@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:profile_student/app/modules/data_diri/bindings/data_diri_binding.dart';
+import 'package:profile_student/app/modules/data_diri/views/data_diri_view.dart';
 import 'package:profile_student/app/modules/edit_profile/bindings/edit_profile_binding.dart';
 import 'package:profile_student/app/modules/edit_profile/views/edit_profile_view.dart';
 import 'package:profile_student/app/modules/home/bindings/home_binding.dart';
@@ -23,6 +25,11 @@ class AppPages {
       name: _Paths.EDIT_PROFILE,
       page: () => const EditProfileView(),
       binding: EditProfileBinding(),
+    ),
+    GetPage(
+      name: _Paths.DATA_DIRI,
+      page: () => const DataDiriView(),
+      binding: DataDiriBinding(),
     ),
   ];
 }
