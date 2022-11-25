@@ -8,6 +8,7 @@ abstract class Routes {
   static const HOME = _Paths.HOME;
   static const EDIT_PROFILE = _Paths.EDIT_PROFILE;
   static const DATA_DIRI = _Paths.DATA_DIRI;
+  static const SERTIFIKAT = _Paths.SERTIFIKAT;
 }
 
 abstract class _Paths {
@@ -15,4 +16,5 @@ abstract class _Paths {
   static const HOME = '/home';
   static const EDIT_PROFILE = '/edit-profile';
   static const DATA_DIRI = '/data-diri';
+  static const SERTIFIKAT = '/sertifikat';
 }

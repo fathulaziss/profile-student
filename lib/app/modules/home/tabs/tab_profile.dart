@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 import 'package:profile_student/app/modules/home/components/tab_profile_header.dart';
 import 'package:profile_student/app/modules/home/components/tab_profile_info.dart';
 import 'package:profile_student/app/modules/home/components/tab_profile_menu.dart';
+import 'package:profile_student/app/routes/app_pages.dart';
 import 'package:profile_student/styles/styles.dart';
 
 class TabProfile extends StatelessWidget {
@@ -28,7 +30,7 @@ class TabProfile extends StatelessWidget {
             label: 'Voucher Kamu',
           ),
           TabProfileMenu(
-            onTap: () {},
+            onTap: () => Get.toNamed(Routes.SERTIFIKAT),
             icon: 'ic_sertifikat.png',
             label: 'Sertifikat',
           ),

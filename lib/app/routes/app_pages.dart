@@ -5,6 +5,8 @@ import 'package:profile_student/app/modules/edit_profile/bindings/edit_profile_b
 import 'package:profile_student/app/modules/edit_profile/views/edit_profile_view.dart';
 import 'package:profile_student/app/modules/home/bindings/home_binding.dart';
 import 'package:profile_student/app/modules/home/views/home_view.dart';
+import 'package:profile_student/app/modules/sertifikat/bindings/sertifikat_binding.dart';
+import 'package:profile_student/app/modules/sertifikat/views/sertifikat_view.dart';
 
 // ignore_for_file: constant_identifier_names
 
@@ -30,6 +32,11 @@ class AppPages {
       name: _Paths.DATA_DIRI,
       page: () => const DataDiriView(),
       binding: DataDiriBinding(),
+    ),
+    GetPage(
+      name: _Paths.SERTIFIKAT,
+      page: () => const SertifikatView(),
+      binding: SertifikatBinding(),
     ),
   ];
 }
