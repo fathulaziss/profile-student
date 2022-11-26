@@ -25,7 +25,7 @@ class TabProfile extends StatelessWidget {
             label: 'Saldo',
           ),
           TabProfileMenu(
-            onTap: () {},
+            onTap: () => Get.toNamed(Routes.VOUCHER),
             icon: 'ic_voucher.png',
             label: 'Voucher Kamu',
           ),

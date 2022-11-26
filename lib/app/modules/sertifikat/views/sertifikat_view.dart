@@ -11,7 +11,7 @@ class SertifikatView extends GetView<SertifikatController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF8F9FC),
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text(
           'Sertifikat Saya',
@@ -19,7 +19,7 @@ class SertifikatView extends GetView<SertifikatController> {
         ),
         centerTitle: true,
         backgroundColor: Colors.white,
-        elevation: 0.5,
+        elevation: 1,
         leading: IconButton(
           onPressed: Get.back,
           icon: Icon(

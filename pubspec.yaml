@@ -7,6 +7,7 @@ environment:
 
 dependencies:
   cupertino_icons: ^1.0.2
+  custom_clippers: ^2.0.0
   dotted_border: ^2.0.0+3
   dropdown_button2: ^1.9.1
   easy_mask: ^2.0.1

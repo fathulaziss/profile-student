@@ -7,6 +7,8 @@ import 'package:profile_student/app/modules/home/bindings/home_binding.dart';
 import 'package:profile_student/app/modules/home/views/home_view.dart';
 import 'package:profile_student/app/modules/sertifikat/bindings/sertifikat_binding.dart';
 import 'package:profile_student/app/modules/sertifikat/views/sertifikat_view.dart';
+import 'package:profile_student/app/modules/voucher/bindings/voucher_binding.dart';
+import 'package:profile_student/app/modules/voucher/views/voucher_view.dart';
 
 // ignore_for_file: constant_identifier_names
 
@@ -37,6 +39,11 @@ class AppPages {
       name: _Paths.SERTIFIKAT,
       page: () => const SertifikatView(),
       binding: SertifikatBinding(),
+    ),
+    GetPage(
+      name: _Paths.VOUCHER,
+      page: () => const VoucherView(),
+      binding: VoucherBinding(),
     ),
   ];
 }

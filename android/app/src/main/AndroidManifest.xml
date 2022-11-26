@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fathdotdev.profile.student">
    <application
-        android:label="profile_student"
+        android:label="Profile Student"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
