@@ -1,7 +1,6 @@
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:profile_student/styles/colors.dart';
 import 'package:profile_student/styles/styles.dart';
 
 class InputDropdown extends StatelessWidget {
@@ -12,7 +11,7 @@ class InputDropdown extends StatelessWidget {
     required this.items,
     required this.selectedItem,
     this.onChanged,
-    this.titleColor = AppColor.primaryColor,
+    this.titleColor = Colors.black,
     this.borderColor,
     this.outlinedBorderColor,
     this.textAlign,
@@ -61,9 +60,8 @@ class InputDropdown extends StatelessWidget {
                         : hintText ?? 'Choose Item',
                     textAlign: textAlign ?? TextAlign.left,
                     style: TextStyles.text.copyWith(
-                      color: selectedItem.isNotEmpty
-                          ? AppColor.primaryColor
-                          : Colors.grey,
+                      color:
+                          selectedItem.isNotEmpty ? Colors.black : Colors.grey,
                     ),
                   ),
                 ),
