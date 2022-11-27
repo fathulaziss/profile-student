@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:profile_student/app/modules/data_diri/components/data_diri_dropdown_item.dart';
 import 'package:profile_student/app/modules/data_diri/components/data_diri_header.dart';
 import 'package:profile_student/app/modules/data_diri/controllers/data_diri_controller.dart';
 import 'package:profile_student/styles/styles.dart';
 import 'package:profile_student/utils/app_asset.dart';
 import 'package:profile_student/widgets/buttons/button_primary.dart';
 import 'package:profile_student/widgets/inputs/input_date.dart';
+import 'package:profile_student/widgets/inputs/input_dropdown.dart';
 import 'package:profile_student/widgets/inputs/input_email.dart';
 import 'package:profile_student/widgets/inputs/input_phone.dart';
 import 'package:profile_student/widgets/inputs/input_primary.dart';
@@ -87,13 +89,25 @@ class DataDiriView extends GetView<DataDiriController> {
                       controller: controller.cNoTelepon,
                       validation: (value) => false,
                     ),
-                    verticalSpace(Insets.sm),
-                    InputPrimary(
-                      label: 'Jenis Kelamin',
-                      hint: 'Masukkan Jenis Kelamin',
-                      controller: controller.cJenisKelamin,
-                      onChanged: (value) {},
-                      validation: (value) => true,
+                    verticalSpace(Insets.xs),
+                    InputDropdown(
+                      title: 'Jenis Kelamin',
+                      hintText: 'Pilih Jenis Kelamin',
+                      items: [
+                        ...controller.listJenisKelamin.map((item) {
+                          return DropdownMenuItem<String>(
+                            value: item,
+                            child: DataDiriDropdownItem(value: item),
+                          );
+                        })
+                      ],
+                      selectedItem: controller.selectedJenisKelamin.value,
+                      onChanged: (value) {
+                        if (value != null) {
+                          final data = value as String;
+                          controller.selectedJenisKelamin(data);
+                        }
+                      },
                     ),
                     verticalSpace(Insets.sm),
                     InputPrimary(

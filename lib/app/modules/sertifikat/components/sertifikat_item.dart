@@ -42,6 +42,13 @@ class SertifikatItem extends StatelessWidget {
                 bottomLeft: Corners.lgRadius,
                 bottomRight: Corners.lgRadius,
               ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(0.35),
+                  blurRadius: 5,
+                  offset: const Offset(0, -3),
+                )
+              ],
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
