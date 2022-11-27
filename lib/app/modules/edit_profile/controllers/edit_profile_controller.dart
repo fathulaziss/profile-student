@@ -5,6 +5,7 @@ import 'package:image_picker/image_picker.dart';
 class EditProfileController extends GetxController {
   final cTanggalLahir = TextEditingController();
   final cNoTelepon = TextEditingController();
+  final cPeran = TextEditingController(text: 'Student');
 
   List<String> listJenisKelamin = ['Laki-Laki', 'Perempuan'];
   RxString selectedJenisKelamin = ''.obs;

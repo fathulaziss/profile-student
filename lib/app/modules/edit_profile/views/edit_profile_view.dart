@@ -111,8 +111,10 @@ class EditProfileView extends GetView<EditProfileController> {
                       InputPrimary(
                         label: 'Peran',
                         hint: 'Masukkan Peran',
+                        controller: controller.cPeran,
                         onChanged: (value) {},
                         validation: (value) => true,
+                        enable: false,
                       ),
                     ],
                   ),

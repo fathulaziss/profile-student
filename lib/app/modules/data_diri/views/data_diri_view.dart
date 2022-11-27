@@ -100,6 +100,7 @@ class DataDiriView extends GetView<DataDiriController> {
                       label: 'Peran',
                       hint: 'Masukkan Peran',
                       controller: controller.cPeran,
+                      enable: false,
                       onChanged: (value) {},
                       validation: (value) => true,
                     ),
