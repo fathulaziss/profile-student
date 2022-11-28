@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:profile_student/styles/colors.dart';
 import 'package:profile_student/styles/styles.dart';
@@ -272,7 +273,7 @@ class _InputPrimaryState extends State<InputPrimary> {
         ),
         if (!isValid && widget.validationText.isNotEmpty)
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8),
+            padding: EdgeInsets.symmetric(horizontal: 8.w),
             child: SizedBox(
               width: Get.width,
               child: Text(
@@ -281,7 +282,7 @@ class _InputPrimaryState extends State<InputPrimary> {
                     TextStyles.desc.copyWith(
                       color: Colors.red.shade700,
                     ),
-                textAlign: TextAlign.end,
+                textAlign: TextAlign.start,
               ),
             ),
           )

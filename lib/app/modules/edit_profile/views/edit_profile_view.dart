@@ -85,7 +85,14 @@ class EditProfileView extends GetView<EditProfileController> {
                         hint: 'Masukkan Nomor Telepon',
                         withCountryCode: true,
                         controller: controller.cNoTelepon,
-                        validation: (value) => true,
+                        validation: (value) {
+                          if (value.isNotEmpty && value.length != 15) {
+                            return false;
+                          } else {
+                            return true;
+                          }
+                        },
+                        validationText: 'Nomor telepon kamu belum diverifikasi',
                       ),
                       verticalSpace(Insets.xs),
                       InputDropdown(
