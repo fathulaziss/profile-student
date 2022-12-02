@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:profile_student/styles/colors.dart';
 import 'package:profile_student/styles/styles.dart';
 import 'package:profile_student/utils/app_asset.dart';
@@ -90,7 +89,7 @@ class ItemNavbar extends StatelessWidget {
     return InkWell(
       onTap: onTap,
       child: Container(
-        width: Get.width / 5,
+        width: MediaQuery.of(context).size.width / 5,
         decoration: BoxDecoration(
           gradient: isSelected
               ? LinearGradient(

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:profile_student/styles/colors.dart';
 import 'package:profile_student/styles/styles.dart';
 
@@ -231,7 +230,7 @@ class _InputPrimaryState extends State<InputPrimary> {
               EdgeInsets.symmetric(
                 vertical: widget.inputStyle == InputStyle.line ? 0 : Insets.xs,
               ),
-          width: Get.width,
+          width: MediaQuery.of(context).size.width,
           decoration: _decor(),
           child: Padding(
             padding: widget.padding ?? EdgeInsets.zero,
@@ -275,7 +274,7 @@ class _InputPrimaryState extends State<InputPrimary> {
           Padding(
             padding: EdgeInsets.symmetric(horizontal: 8.w),
             child: SizedBox(
-              width: Get.width,
+              width: MediaQuery.of(context).size.width,
               child: Text(
                 widget.validationText,
                 style: widget.errorTextStyle ??

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:profile_student/app/modules/voucher/models/voucher_model.dart';
 import 'package:profile_student/styles/styles.dart';
 import 'package:profile_student/utils/app_asset.dart';
@@ -13,7 +12,7 @@ class VoucherItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: Get.width,
+      width: MediaQuery.of(context).size.width,
       decoration: const BoxDecoration(color: Color(0xFFF8F9FE)),
       margin: EdgeInsets.only(bottom: Insets.lg),
       child: Stack(

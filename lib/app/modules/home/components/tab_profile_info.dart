@@ -1,8 +1,7 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
-import 'package:profile_student/app/routes/app_pages.dart';
+import 'package:profile_student/app/modules/data_diri/views/data_diri_view.dart';
 import 'package:profile_student/styles/colors.dart';
 import 'package:profile_student/styles/styles.dart';
 import 'package:profile_student/utils/app_asset.dart';
@@ -13,7 +12,15 @@ class TabProfileInfo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () => Get.toNamed(Routes.DATA_DIRI),
+      // onTap: () => Get.toNamed(Routes.DATA_DIRI),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const DataDiriView(),
+          ),
+        );
+      },
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 20.w),
         child: DottedBorder(

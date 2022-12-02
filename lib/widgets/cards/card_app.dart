@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:profile_student/styles/styles.dart';
 
 class CardApp extends StatelessWidget {
@@ -40,7 +39,7 @@ class CardApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: width ?? Get.width,
+      width: width ?? MediaQuery.of(context).size.width,
       height: height,
       margin: margin ?? EdgeInsets.zero,
       padding: padding ?? EdgeInsets.all(Insets.med),

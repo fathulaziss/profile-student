@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:profile_student/styles/styles.dart';
 import 'package:profile_student/utils/app_asset.dart';
 
@@ -25,7 +24,7 @@ class TabProfileMenu extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 20.w),
         child: SizedBox(
-          width: Get.width,
+          width: MediaQuery.of(context).size.width,
           child: Column(
             children: [
               Padding(

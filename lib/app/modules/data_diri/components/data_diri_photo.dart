@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:profile_student/styles/styles.dart';
 import 'package:profile_student/utils/app_asset.dart';
 
@@ -35,7 +34,7 @@ class DataDiriPhoto extends StatelessWidget {
                   IconButton(
                     onPressed: () {
                       onTapCamera();
-                      Get.back();
+                      Navigator.pop(context);
                     },
                     padding: EdgeInsets.zero,
                     icon: SizedBox.square(
@@ -61,7 +60,7 @@ class DataDiriPhoto extends StatelessWidget {
                   IconButton(
                     onPressed: () {
                       onTapGallery();
-                      Get.back();
+                      Navigator.pop(context);
                     },
                     padding: EdgeInsets.zero,
                     icon: SizedBox.square(
@@ -87,7 +86,7 @@ class DataDiriPhoto extends StatelessWidget {
                   IconButton(
                     onPressed: () {
                       onTapRemove();
-                      Get.back();
+                      Navigator.pop(context);
                     },
                     padding: EdgeInsets.zero,
                     icon: SizedBox.square(

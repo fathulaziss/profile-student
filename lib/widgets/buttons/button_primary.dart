@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:profile_student/styles/colors.dart';
 import 'package:profile_student/styles/styles.dart';
 import 'package:profile_student/widgets/others/loading_indicator.dart';
@@ -48,7 +47,9 @@ class ButtonPrimary extends StatelessWidget {
     return Center(
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 120),
-        width: isLoading ? height ?? 42.w : width ?? Get.width,
+        width: isLoading
+            ? height ?? 42.w
+            : width ?? MediaQuery.of(context).size.width,
         height: height ?? 42.w,
         decoration: isOutline
             ? BoxDecoration(

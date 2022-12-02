@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:get/get.dart';
 import 'package:profile_student/app/modules/sertifikat/components/sertifikat_item.dart';
-import 'package:profile_student/app/modules/sertifikat/controllers/sertifikat_controller.dart';
 import 'package:profile_student/styles/styles.dart';
 
-class SertifikatView extends GetView<SertifikatController> {
+class SertifikatView extends StatelessWidget {
   const SertifikatView({super.key});
 
   @override
@@ -21,7 +19,7 @@ class SertifikatView extends GetView<SertifikatController> {
         backgroundColor: Colors.white,
         elevation: 1,
         leading: IconButton(
-          onPressed: Get.back,
+          onPressed: () => Navigator.pop(context),
           icon: Icon(
             Icons.arrow_back_ios,
             color: Colors.black,
